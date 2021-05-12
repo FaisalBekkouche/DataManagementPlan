@@ -1,12 +1,12 @@
 Chers collègues,
 
-Vous avez mis en place une base de données d’images dans votre structure en ayant conscience que cela permet d’augmenter la traçabilité des données de la recherche en répondant de façon implicite au concept FAIR (https://www.go-fair.org/fair-principles/), soit « Facile à découvrir, Accessible, Interopérable, Réutilisable », qui est l’un des piliers de la science ouverte. La mise en place de Plans de Gestion de Données associés (PGD de structure) est la formalisation du processus de gestion de votre base de données décrivant les moyens permettant ainsi de les rendre ainsi visibles, accessibles, et réutilisables quel que soit le demandeur.
+Vous avez mis en place une base de données d’images dans votre structure en ayant conscience que cela permet d’augmenter la traçabilité des données de la recherche en répondant de façon implicite au concept FAIR (https://www.go-fair.org/fair-principles/), soit « Facile à découvrir, Accessible, Interopérable, Réutilisable », qui est l’un des piliers de la science ouverte. La mise en place de Plans de Gestion de Données associés (PGD de structure) est la formalisation du processus de gestion de votre base de données décrivant les moyens permettant ainsi de les rendre visibles, accessibles, et réutilisables quel que soit le demandeur.
 Dans le but de vous faciliter la moisson de ces informations, un projet de « PGD structure bioimagerie », porté par et réalisé conjointement avec les Infrastructure Nationale en Biologie Santé (INBS) « France-BioImaging » (FBI), « Institut Français de Bioinformatique » (IFB), et « Centre National De Ressources Biologiques Marines » (EMBRC-France) est en cours d’élaboration.
 
-Cette architecture formera le tronc du PGD projet à destination des usagers de cette structure, permettant accessoirement que les champs idoines du PGD projet soient automatiquement renseignés par les informations déjà glanées en amont.
+Cette architecture formera le tronc du PGD projet à destination des usagers de cette structure (Paulette: quelle structure ?), permettant accessoirement que les champs idoines du PGD projet soient automatiquement renseignés par les informations déjà glanées en amont.
 Nous vous proposons de tester et nous donner votre avis sur le questionnaire générique élaboré, destiné à moissonner ces informations en entrée puis de générer des documents à façon en utilisant de « Templates » d’extraction.
 
-Vous pouvez avoir un aperçu complet du questionnaire non éditable à cette adresse : https://dsw.france-bioinformatique.fr/projects/c59841dd-ca42-49fe-90da-6412cf9dd3bf<br><br>
+Vous pouvez avoir un aperçu complet du questionnaire non éditable à cette adresse : https://dsw.france-bioinformatique.fr/projects/c59841dd-ca42-49fe-90da-6412cf9dd3bf (au secours ! cette adresse ne marche pas/plus)<br><br>
 
 <h1><strong>TERMINOLOGIE</h1></strong><br>
 
@@ -32,15 +32,15 @@ Pour un chef d’équipe qui a besoin de décrire la gestion de ses images dans 
 
 Il existe 4 rôles différents pour un profil utilisateur :<br>   
 <strong>Anonymous</strong> : utilisateur de DSW qui n'est pas encore connecté. Il peut s'inscrire, se connecter ou récupérer son mot de passe si vous l'avez oublié.<br><br>
-<strong>Researcher</strong> : ce rôle est attribué par défaut aux utilisateurs après leur inscription. Nous partirons du principe que seuls les administrateurs pourront modifier ces rôles. Cet utilisateur travaille sur un projet scientifique et a les connaissances sur le projet en question. Son objectif est d'obtenir un plan de gestion des données
+<strong>Researcher</strong> : ce rôle est attribué par défaut aux utilisateurs après leur inscription. Nous partirons du principe que seuls les administrateurs pourront modifier ces rôles. Cet utilisateur travaille sur un projet scientifique et a les connaissances sur le projet en question. Son objectif est d'élaborer un plan de gestion des données
                FAIR.<br>    
-<strong>Steward</strong> : utilisateur qui a une bonne connaissance de l'outil DSW. I peut créer  des « knowledge models ». Ceux-ci sont ensuite utilisé par les scientifiques (ayant le rôle de Researcher) pour créer le DMP avec le questionnaire.<br><br>
-<strong>Administrator</strong> : Il gère les paramètres généraux et dispose des privilèges les plus élevés.<br><br>  
+<strong>Data Steward</strong> : utilisateur qui a une bonne connaissance de l'outil DSW. Il peut créer/modifier  des « knowledge models ». Ceux-ci sont ensuite utilisé par les scientifiques (ayant le rôle de Researcher) pour créer le DMP avec le questionnaire basé sur les « knowledge models ».<br><br>
+<strong>Administrator</strong> : Il gère les paramètres généraux et les utilisateurs, et dispose des privilèges les plus élevés.<br><br>  
    
 
-Après avir obtenu un accès :  <br>
+Après avoir obtenu un accès :  <br>
 ![image](https://user-images.githubusercontent.com/19286219/115886454-3b5a1e00-a451-11eb-97f9-542e76f85d6d.png)<br>
-Vous pouvez utiliser l’ensemble des fonctionnalités de l’outil DSW (Data Stewardship Wizard) :
+Vous pouvez utiliser l’ensemble des fonctionnalités de l’outil DSW (Data Stewardship Wizard) auxquelles votre rôle donne accès :
 
 ![image](https://user-images.githubusercontent.com/19286219/115886496-457c1c80-a451-11eb-9d30-aaa4eacc82c1.png)
 
@@ -53,6 +53,8 @@ Pour remplir votre propre questionnaire, procédez comme suit :<br>
 ![CREATE PROJECT](https://user-images.githubusercontent.com/84018042/117863476-1a3c5e80-b294-11eb-82a8-ea8b803de1fd.png)<br>
 Puis nommez votre projet comme suit PGD_« Nom de votre labo ou plateforme » en utilisant le « knowledge model » : Bioimagexxxx, sauvez.
 Votre projet est maintenant disponible dans ![image](https://user-images.githubusercontent.com/19286219/115886735-8411d700-a451-11eb-9337-ea85e8962af3.png)<br><br>
+
+Attention :  il faut utiliser le km https://dsw.france-bioinformatique.fr/knowledge-models/IFB:bioimage-pgd-structure-km:0.0.0 « Modèle de PGD structure pour la bioimagerie 0.0.0 » : j'ai renommé et clarifié 
 
 <h1><strong>REMPLISSAGE DU QUESTIONNAIRE</h1></strong><br>
 Vous avez maintenant accès aux différents champs à compléter dans
